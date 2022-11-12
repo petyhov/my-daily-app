@@ -1,0 +1,15 @@
+{
+  "extends": ["next", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prefer-const": "error",
+    "no-unused-vars": "error",
+    "no-console": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
