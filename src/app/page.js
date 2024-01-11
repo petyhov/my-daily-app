@@ -27,7 +27,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+      <h1>This is {process.env.BUILD_TYPE}</h1>
       <div className={styles.center}>
         <Image
           className={styles.logo}
