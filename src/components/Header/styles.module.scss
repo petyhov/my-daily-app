@@ -1,0 +1,20 @@
+.header {
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 36px;
+  animation: pulsate 1.5s infinite alternate;
+  border-bottom: solid #fff;
+  padding: 8px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe;
+}
