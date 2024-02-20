@@ -10,6 +10,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <p className={cn(caveat.className, styles.logo)}>MyDailyApp</p>
+      <div className={styles.line} />
     </header>
   );
 };

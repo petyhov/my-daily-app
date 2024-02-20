@@ -1,0 +1,37 @@
+@mixin neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe;
+}
+
+@mixin neonShadow {
+  box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe,
+    0 0 10px #bc13fe;
+}
+
+@mixin flexbox($direction, $justifyContent, $alignItems) {
+  display: flex;
+  @if $direction == column {
+    flex-direction: column;
+  }
+  @if $justifyContent {
+    justify-content: $justifyContent;
+  }
+  @if $alignItems {
+    align-items: $alignItems;
+  }
+}
