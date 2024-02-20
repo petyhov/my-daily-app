@@ -1,20 +1,14 @@
-.header {
-  overflow: hidden;
-}
+@import '/src/styles/mixins.scss';
 
 .logo {
+  padding: 4px 8px 8px;
   font-size: 36px;
-  animation: pulsate 1.5s infinite alternate;
-  border-bottom: solid #fff;
-  padding: 8px;
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 10px #bc13fe,
-    0 0 10px #bc13fe,
-    0 0 10px #bc13fe,
-    0 0 10px #bc13fe,
-    0 0 10px #bc13fe;
+  @include neonText;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color1);
+  @include neonShadow;
 }

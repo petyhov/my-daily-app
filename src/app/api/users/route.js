@@ -5,7 +5,7 @@ import User from '@/models/User';
 
 export const GET = async () => {
   await connect();
+  const existingUsers = await User.find();
 
-  const existingUser = await User.find();
-  return NextResponse.json({ existingUser }, { status: 202 });
+  return NextResponse.json({ existingUsers });
 };
