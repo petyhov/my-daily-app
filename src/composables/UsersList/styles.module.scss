@@ -1,8 +1,7 @@
 @import '/src/styles/mixins.scss';
 
 .list {
-  flex-grow: 1;
-  @include flexbox(column, center, center);
+  @include flexbox(column, null, center);
   gap: 40px;
 }
 
