@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 
-import connect from '@/utils/db';
-import User from '@/models/User';
+import { connectToDB } from 'utils';
+import { User } from 'models';
 
 export const GET = async () => {
-  await connect();
+  await connectToDB();
   const existingUsers = await User.find();
 
   return NextResponse.json({ existingUsers });
