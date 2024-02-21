@@ -1,6 +1,6 @@
 import { Caveat } from 'next/font/google';
 
-import { concatClassNames as cn } from '@/helpers';
+import { cn } from 'helpers';
 
 import styles from './styles.module.scss';
 
