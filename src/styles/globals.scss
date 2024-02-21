@@ -16,6 +16,10 @@ body {
   background-color: var(--color2);
 }
 
+main {
+  padding: 24px;
+}
+
 button {
   @include flexbox(null, center, center);
   background-color: inherit;
@@ -23,4 +27,8 @@ button {
   &:active {
     scale: 0.95;
   }
+}
+
+ul {
+  list-style: none;
 }
