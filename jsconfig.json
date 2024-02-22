@@ -2,10 +2,12 @@
   "compilerOptions": {
     "paths": {
       "components": ["./src/components"],
+      "composables": ["./src/composables"],
       "config": ["./src/config"],
       "helpers": ["./src/helpers"],
       "models": ["./src/models"],
       "operations": ["./src/operations"],
+      "redux": ["./src/redux"],
       "utils": ["./src/utils"],
     },
   },

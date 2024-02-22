@@ -1,0 +1,13 @@
+@import '/src/styles/mixins.scss';
+
+.pageContainer {
+  &.verticalCenter {
+    @include flexbox(column, center, null);
+    flex: 1;
+  }
+
+  .title {
+    text-transform: uppercase;
+    @include neonText;
+  }
+}
