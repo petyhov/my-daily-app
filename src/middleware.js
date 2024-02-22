@@ -1,10 +1,15 @@
 import { NextResponse } from 'next/server';
-import routes, { restrictedRoutes } from './config/routes';
+
+import routes from './config/routes';
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
-  if (restrictedRoutes.includes(pathname)) {
+  const loginUser = request.cookies.has('userId');
+
+  if (!loginUser && pathname !== routes.login) {
     return NextResponse.redirect(new URL(routes.login, request.url));
+  } else if (loginUser && pathname === routes.login) {
+    return NextResponse.redirect(new URL(routes.home, request.url));
   }
 }
 

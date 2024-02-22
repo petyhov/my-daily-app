@@ -1,6 +1,7 @@
 import Script from 'next/script';
 
 import { Header } from 'components';
+import { CustomProvider } from 'redux';
 
 import '../styles/globals.scss';
 
@@ -18,12 +19,14 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Script src="https://kit.fontawesome.com/f0ad28ac2a.js" crossOrigin="anonymous" />
-      <body className="purpleTheme">
-        <Header />
-        <main>{children}</main>
-      </body>
-    </html>
+    <CustomProvider>
+      <html lang="en">
+        <Script src="https://kit.fontawesome.com/f0ad28ac2a.js" crossOrigin="anonymous" />
+        <body className="purpleTheme">
+          <Header />
+          <main>{children}</main>
+        </body>
+      </html>
+    </CustomProvider>
   );
 }
