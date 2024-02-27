@@ -1,3 +1,7 @@
+import { Icon } from 'components';
+
+import { iconsName } from 'config';
+
 import styles from './styles.module.scss';
 
 const MenuList = () => {
@@ -5,7 +9,7 @@ const MenuList = () => {
     <ul>
       <li>
         <button className={styles.btn}>
-          <i className={`fa-solid fa-gear ${styles.test}`} />
+          <Icon name={iconsName.GEAR} />
         </button>
       </li>
     </ul>
