@@ -1,13 +1,10 @@
 @import '/src/styles/mixins.scss';
 
 .btn {
+  padding: 8px;
   width: 80px;
   height: 80px;
   border: 2px solid var(--color1);
   border-radius: 10px;
   @include neonShadow;
-}
-.test {
-  font-size: 56px;
-  color: var(--color1);
 }
