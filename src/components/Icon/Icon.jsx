@@ -1,17 +1,23 @@
+import PropTypes from 'prop-types';
 import dynamic from 'next/dynamic';
 
 import { iconsName } from 'config';
 
 import styles from './styles.module.scss';
 
+const GearComponent = dynamic(() => import(/* webpackChunkName: "GearIcon" */ './Gear'));
+
 const Icon = ({ name }) => {
-  const ImageComponents = {
-    [iconsName.GEAR]: dynamic(() => import(/* webpackChunkName: "GearIcon" */ './Gear')),
-  };
+  switch (name) {
+    case iconsName.GEAR:
+      return <GearComponent className={styles.icon} />;
+    default:
+      break;
+  }
+};
 
-  const ImageComponent = ImageComponents[name];
-
-  return <ImageComponent className={styles.icon} />;
+Icon.propTypes = {
+  name: PropTypes.string,
 };
 
 export default Icon;

@@ -1,8 +1,9 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 
-import { userActions } from '../../redux/user';
+import { userActions } from 'redux';
 import { routes } from 'config';
 
 import styles from './styles.module.scss';
@@ -27,6 +28,10 @@ const UsersList = ({ users }) => {
       ))}
     </div>
   );
+};
+
+UsersList.propTypes = {
+  users: PropTypes.array.isRequired,
 };
 
 export default UsersList;

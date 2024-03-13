@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersList component should match snapshot 1`] = `
+<div
+  className="list"
+>
+  <button
+    className="item"
+    data-user-id="user1"
+    onClick={[Function]}
+  >
+    user1
+  </button>
+  <button
+    className="item"
+    data-user-id="user2"
+    onClick={[Function]}
+  >
+    user2
+  </button>
+</div>
+`;

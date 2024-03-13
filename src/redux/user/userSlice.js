@@ -24,6 +24,6 @@ export const userActions = userSlice.actions;
 //   }, 1000);
 // };
 
-export const selectCount = (state) => state.counter.value;
+// export const selectCount = (state) => state.counter.value;
 
 export default userSlice.reducer;
