@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLayout component should match snapshot  1`] = `
+<div
+  className="pageContainer verticalCenter"
+>
+  <h2
+    className="title"
+  >
+    test title
+  </h2>
+  <h4>
+    test childrens
+  </h4>
+</div>
+`;

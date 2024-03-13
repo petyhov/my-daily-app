@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { cn } from 'helpers';
 
 import styles from './styles.module.scss';
@@ -9,6 +11,12 @@ const PageLayout = ({ title, verticalCenter, children }) => {
       {children}
     </div>
   );
+};
+
+PageLayout.propTypes = {
+  title: PropTypes.string,
+  verticalCenter: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export default PageLayout;

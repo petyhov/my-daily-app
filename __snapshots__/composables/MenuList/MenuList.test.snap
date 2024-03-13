@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuList component should match snapshot  1`] = `
+<ul>
+  <li>
+    <button
+      className="btn"
+    >
+      <Icon
+        name="GEAR"
+      />
+    </button>
+  </li>
+</ul>
+`;

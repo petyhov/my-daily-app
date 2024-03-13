@@ -1,4 +1,5 @@
 import Script from 'next/script';
+import PropTypes from 'prop-types';
 
 import { Header } from 'components';
 import { CustomProvider } from 'redux';
@@ -30,3 +31,7 @@ export default function RootLayout({ children }) {
     </CustomProvider>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

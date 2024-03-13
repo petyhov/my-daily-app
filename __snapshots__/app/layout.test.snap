@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component should match snapshot  1`] = `
+<CustomProvider>
+  <html
+    lang="en"
+  >
+    <Script
+      crossOrigin="anonymous"
+      src="https://kit.fontawesome.com/f0ad28ac2a.js"
+    />
+    <body
+      className="purpleTheme"
+    >
+      <Header />
+      <main>
+        <h3>
+          test children
+        </h3>
+      </main>
+    </body>
+  </html>
+</CustomProvider>
+`;
